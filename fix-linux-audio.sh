@@ -6,7 +6,7 @@ DEV="/dev/snd/hwC1D0"
 CODEC="/sys/class/sound/hwC1D0"
 
 if [[ "${EUID:-$(id -u)}" -ne 0 ]]; then
-  echo "Bitte mit sudo ausführen: sudo $0" >&2
+  echo "Run as sudo: sudo $0" >&2
   exit 1
 fi
 
